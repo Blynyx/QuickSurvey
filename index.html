@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickSurvey — Encuesta interactiva</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>QuickSurvey</h1>
+    <p>Encuesta interactiva sobre tu experiencia en el curso de Ingeniería Web.</p>
+  </header>
+
+  <main class="contenedor">
+    <section id="encuesta" class="tarjeta">
+      <div id="progreso" class="progreso">
+        <p id="texto-progreso"></p>
+        <div class="barra-progreso">
+          <div id="relleno-progreso" class="relleno-progreso"></div>
+        </div>
+      </div>
+
+      <article id="contenedor-pregunta" class="pregunta"></article>
+
+      <p id="mensaje-validacion" class="mensaje-validacion oculto"></p>
+
+      <div class="botones">
+        <button type="button" id="boton-anterior">Anterior</button>
+        <button type="button" id="boton-siguiente">Siguiente</button>
+        <button type="button" id="boton-finalizar">Finalizar</button>
+      </div>
+    </section>
+
+    <section id="resultados" class="tarjeta oculto">
+      <h2>Resumen de respuestas</h2>
+      <div id="resumen" class="resumen"></div>
+
+      <h2>Estadísticas</h2>
+      <div id="estadisticas" class="estadisticas"></div>
+
+      <div class="botones">
+        <button type="button" id="boton-reiniciar">Reiniciar encuesta</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
