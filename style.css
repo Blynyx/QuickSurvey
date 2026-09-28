@@ -6,67 +6,73 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #e8eef5;
+  background-color: #c5d6e6;
+  background: linear-gradient(#9fbcd4, #d5e3ef);
   color: #1c2833;
   line-height: 1.5;
   min-height: 100vh;
 }
 
 .encabezado {
-  background-color: #163a5c;
+  background-color: #12324c;
   color: #ffffff;
-  padding: 36px 20px 48px;
+  padding: 16px 20px 18px;
   text-align: center;
-  border-bottom: 4px solid #2b6ea3;
 }
 
 .encabezado h1 {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  letter-spacing: 0.3px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .encabezado p {
-  font-size: 1.02rem;
-  max-width: 620px;
+  display: block;
+  width: 100%;
+  font-size: 0.95rem;
+  max-width: 640px;
   margin: 0 auto;
-  color: #d7e4f0;
+  color: #d5e4f0;
+  overflow-wrap: break-word;
+  padding: 0 8px;
 }
 
 .contenedor {
-  max-width: 760px;
-  margin: -24px auto 0;
-  padding: 0 16px 48px;
+  max-width: 860px;
+  margin: 16px auto 0;
+  padding: 0 16px 40px;
 }
 
 .tarjeta {
   background-color: #ffffff;
-  border: 1px solid #d5e0eb;
-  border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(22, 58, 92, 0.1);
-  padding: 32px;
+  border: 1px solid #c3d4e3;
+  border-top: 8px solid #1e5a8c;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(18, 50, 76, 0.18);
+  padding: 36px 40px;
 }
 
 .progreso {
+  background-color: #eaf3fb;
+  border: 1px solid #c9dcea;
+  border-radius: 12px;
+  padding: 14px 16px 16px;
   margin-bottom: 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e6edf4;
 }
 
 #texto-progreso {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #3d5a73;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #12324c;
   margin-bottom: 10px;
 }
 
 .barra-progreso {
   width: 100%;
-  height: 12px;
-  background-color: #e2eaf2;
-  border: 1px solid #d0dbe6;
-  border-radius: 999px;
+  height: 14px;
+  background-color: #d5e4f0;
+  border: 1px solid #b7cce0;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -97,66 +103,71 @@ body {
 }
 
 .pregunta h2 {
-  font-size: 1.4rem;
-  line-height: 1.35;
-  color: #12283c;
-  margin-bottom: 12px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #12324c;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
 }
 
 .aviso-obligatoria,
 .aviso-opcional {
   display: inline-block;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  margin-bottom: 18px;
-  padding: 4px 10px;
-  border-radius: 999px;
+  margin-bottom: 20px;
+  padding: 3px 8px;
+  border-radius: 6px;
 }
 
 .aviso-obligatoria {
-  color: #8a1f1f;
-  background-color: #fdecec;
-  border: 1px solid #f3c6c6;
+  color: #7a1d1d;
+  background-color: #f8e8e8;
+  border: 1px solid #e6c4c4;
 }
 
 .aviso-opcional {
-  color: #3d5163;
-  background-color: #eef3f8;
-  border: 1px solid #d5e0eb;
+  color: #4a5d6e;
+  background-color: #e8eef4;
+  border: 1px solid #cdd8e3;
 }
 
 .opciones-radio {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .opcion {
   display: flex;
   align-items: center;
-  gap: 12px;
-  border: 1px solid #d5e0eb;
+  gap: 14px;
+  border: 2px solid #cdd8e3;
   border-radius: 12px;
-  padding: 14px 16px;
+  padding: 16px 18px;
   cursor: pointer;
-  background-color: #f7fafc;
+  background-color: #ffffff;
   color: #1c2833;
 }
 
 .opcion input {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   accent-color: #1e5a8c;
   cursor: pointer;
 }
 
 .opcion span {
-  font-size: 1rem;
+  flex: 1;
+  font-size: 1.05rem;
+  padding: 6px 10px;
+  border-radius: 8px;
 }
 
 .opcion:hover {
-  background-color: #eaf3fb;
+  background-color: #eef6fc;
   border-color: #1e5a8c;
 }
 
@@ -165,8 +176,9 @@ body {
 }
 
 .opcion input[type="radio"]:checked + span {
-  font-weight: 600;
-  color: #163a5c;
+  background-color: #d4e7f6;
+  color: #12324c;
+  font-weight: 700;
 }
 
 .opcion:focus-within {
@@ -179,27 +191,28 @@ textarea {
   width: 100%;
   max-width: 100%;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #1c2833;
-  border: 1px solid #c5d3e0;
-  border-radius: 10px;
-  padding: 12px 14px;
+  border: 2px solid #cdd8e3;
+  border-radius: 12px;
+  padding: 16px 18px;
   background-color: #ffffff;
 }
 
 select {
-  min-height: 48px;
+  min-height: 56px;
 }
 
 textarea {
   resize: vertical;
-  min-height: 130px;
+  min-height: 140px;
   line-height: 1.5;
 }
 
 select:hover,
 textarea:hover {
   border-color: #1e5a8c;
+  background-color: #eef6fc;
 }
 
 select:focus,
@@ -207,40 +220,44 @@ textarea:focus {
   outline: 3px solid #8fb6d9;
   outline-offset: 2px;
   border-color: #1e5a8c;
+  background-color: #ffffff;
 }
 
 .mensaje-validacion {
   margin-top: 18px;
   padding: 12px 14px;
   border-radius: 10px;
-  background-color: #fdf2f2;
-  color: #8a1f1f;
-  border: 1px solid #f0c7c7;
-  border-left: 4px solid #c0392b;
-  font-size: 0.95rem;
+  background-color: #f8eaea;
+  color: #7a1d1d;
+  border: 1px solid #e6c4c4;
+  border-left: 6px solid #b03a2e;
+  font-size: 0.98rem;
+  font-weight: 600;
 }
 
 .botones {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #d5e0eb;
 }
 
 button {
   border: none;
   border-radius: 10px;
-  padding: 12px 20px;
-  min-height: 44px;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 14px 24px;
+  min-height: 48px;
+  font-size: 1.05rem;
+  font-weight: 700;
   cursor: pointer;
   background-color: #1e5a8c;
   color: #ffffff;
 }
 
 button:hover {
-  background-color: #16486f;
+  background-color: #15466e;
 }
 
 button:focus-visible {
@@ -252,17 +269,19 @@ button:focus-visible {
 #boton-finalizar {
   background-color: #1e5a8c;
   color: #ffffff;
+  min-width: 140px;
 }
 
 #boton-siguiente:hover,
 #boton-finalizar:hover {
-  background-color: #16486f;
+  background-color: #15466e;
 }
 
 #boton-anterior {
   background-color: #ffffff;
   color: #2c3e50;
-  border: 1px solid #c5d3e0;
+  border: 2px solid #c5d3e0;
+  font-weight: 600;
 }
 
 #boton-anterior:hover {
@@ -281,6 +300,11 @@ button:focus-visible {
 
 .oculto {
   display: none;
+}
+
+#resultados {
+  background-color: #f3f8fc;
+  border-top-color: #2f6f4e;
 }
 
 .resumen {
@@ -302,79 +326,96 @@ button:focus-visible {
 
 .item-resumen,
 .item-estadistica {
-  background-color: #f7fafc;
-  border: 1px solid #d5e0eb;
+  background-color: #ffffff;
+  border: 1px solid #cdd8e3;
   border-radius: 12px;
-  padding: 14px 16px;
+  padding: 16px 18px;
 }
 
 .item-resumen {
-  border-left: 4px solid #1e5a8c;
+  border-left: 6px solid #1e5a8c;
 }
 
 .item-resumen h3,
 .item-estadistica h3 {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #3d5a73;
-  margin-bottom: 6px;
+  color: #4a5d6e;
+  margin-bottom: 8px;
 }
 
 .item-resumen p {
-  font-size: 1.05rem;
-  color: #12283c;
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #12324c;
+}
+
+.item-estadistica {
+  text-align: center;
 }
 
 .item-estadistica p {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  color: #163a5c;
+  color: #1e5a8c;
 }
 
 #resultados h2 {
-  font-size: 1.28rem;
-  margin-bottom: 14px;
-  color: #163a5c;
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+  color: #12324c;
   padding-bottom: 8px;
-  border-bottom: 1px solid #e6edf4;
+  border-bottom: 2px solid #d5e0eb;
 }
 
 @media (max-width: 600px) {
   .encabezado {
-    padding: 28px 16px 40px;
+    padding: 14px 14px 16px;
   }
 
   .encabezado h1 {
-    font-size: 1.7rem;
+    font-size: 1.45rem;
+  }
+
+  .encabezado p {
+    font-size: 0.85rem;
+    max-width: 100%;
   }
 
   .contenedor {
-    margin-top: -16px;
-    padding: 0 12px 36px;
+    margin-top: 10px;
+    padding: 0 8px 28px;
   }
 
   .tarjeta {
     padding: 20px 16px;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   .pregunta h2 {
-    font-size: 1.22rem;
+    font-size: 1.25rem;
   }
 
   .opcion {
-    padding: 13px 14px;
+    padding: 14px;
   }
 
   .estadisticas {
     grid-template-columns: 1fr;
   }
 
+  .item-estadistica:last-child {
+    grid-column: auto;
+  }
+
   .botones {
     flex-direction: column;
   }
 
-  button {
+  button,
+  #boton-siguiente,
+  #boton-finalizar {
     width: 100%;
+    min-width: 0;
   }
 }
